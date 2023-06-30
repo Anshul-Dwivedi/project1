@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row banner">
+<div class="col-md-12 subbanner">
+<h1>CONTACT</h1>
+</div>
+</div>
+<div class="row padding30">
+<div class="col-md-6">
+<form action="/insertcontact/" method="post">
+{% csrf_token %}
+<label>Name</label>
+
+<input type="text" class="form-control" name="name" pattern="[A-Z a-z]*" required /><br>
+<label>Email</label>
+
+<input type="email" class="form-control" name="email" />
+<br>
+<label>Phone No.</label>
+
+<input type="text" class="form-control" name="phone" required pattern="[6|7|8|9][0-9]{9}" />
+<br>
+<label>Subject</label>
+<select name="subject" class="form-control" required>
+<option value="">-Select-</option>
+<option>General</option>
+<option>Feedback</option>
+<option>Enquiry</option>
+<option>Suggestion</option>
+<option>Complaint</option>
+</select>
+<br>
+<label>Message</label>
+<textarea class="form-control" name="message"></textarea>
+<br>
+<input type="submit" class="btn btn-primary" name="btnsend" value="Submit" />
+
+</form>
+</div>
+<div class="col-md-6">
+<img src="{% static 'img/contact.png' %}" height="350" width="100%" />
+</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+.row{ margin:0px;}
+#nav{ background-color:#0033CC; font-weight:bold; padding:20px;  }
+#make {background-color:#FF3366; font-weight:bold; padding:20px; margin-top:20px; color:#FFFFFF; }
+#get { padding:20px; margin-top:20px;}
+#style { background-color:#FFFFCC; padding:20px; margin-top:20px;}
+#estimate { padding:20px; margin-top:20px;}
+#delivery {background-color:#CCCCCC; padding:20px; margin-top:20px;}
+#product { padding:20px; border:2px solid black; margin-top:20px; }
+#are {background-color:#FF3366; padding:20px; margin-top:20px;}
+#nav a{ color:#FFFFFF; }
+#nav a:hover{ background-color:FF33CC; }
+
+#work { padding:20px; margin-top:20px; background-color:#99CCFF;}
+#Ko { padding:20px; margin-top:20px;}
+#client {background-color:#FF3366; padding:20px; margin-top:20px;}
+#office { padding:20px; margin-top:20px;}
+#jpg { padding:20px; margin-top:20px;}
+#black {background-color:#000000; color:white; }
+#jpg {background-color:#000000; color:white; }
+#last {background-color:#000000; color:white; padding:10px; }
+#about{ background:#CCCCCC; padding:30px;}
+#header{  font-family:Georgia;}
+.btnpd{ background:#0033CC; border-radius:0px; padding:10px;}
+.banner{ background:url('img/banner.jpg'); background-size:100% 300px;  text-align:center; color:#fff;}
+.subbanner{ padding:100px; background:rgba(0,0,0,0.7);}
+.padding30{padding:50px;}
+#gallary .col-md-3{margin-bottom:30px; border:2px solid royalblue;}
+.service{ margin-bottom:30px; margin-top:20px; border:2px double #FF3366;}
+#safety p, #safety li{ font-size:16px; line-height:30px;}
+.safety{ padding:20px; margin-bottom:30px; margin-top:30px;}
+.heading{ border-bottom:2px solid #FF3366; padding:5px; font-family:Georgia; text-transform:uppercase;
+}
+#safety h3{ margin-bottom:30px;}
+#footernav a{ color:#fff;}
+#footernav a:hover{ color:#000;}

@@ -1,0 +1,77 @@
+{% load static %}
+<html>
+<head>
+<title>Packers and Movers</title>
+</head>
+<link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet" />
+<link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap-theme.min.css' %}" type="text/css" rel="stylesheet" />
+<link href="{% static 'style.css' %}" type="text/css" rel="stylesheet" />
+
+<body>
+<div class="row" id="header">
+<div class="col-md-8 col-md-offset-2">
+<div class="col-md-4">
+<img src="{% static 'img/logo.jpg' %}" height="130" width="100%" />
+</div>
+<div class="col-md-8">
+<h1> Packers & Movers</h1>
+<h3>INTERNATIONAL CO.</h3>
+</div>
+</div>
+
+
+</div>
+<div class="row" id="nav">
+<nav>
+<ul class="nav navbar-nav">
+<li><a href="/"><span class="glyphicon glyphicon"></span>Home</a></li>
+<li><a href="/about/"><span class="glyphicon glyphicon"></span>About</a></li>
+
+<li><a href="/services/"><span class="glyphicon glyphicon"></span>Services</a></li>
+<li><a href="/safety/"><span class="glyphicon glyphicon"></span>Safety Features</a></li>
+
+<li><a href="/gallary/"><span class="glyphicon glyphicon"></span>Gallary</a></li>
+
+<li><a href="/contact/"><span class="glyphicon glyphicon"></span>Contact</a></li>
+<li style="border:1px solid #FFF; margin-left:20px;">
+<a href="/quote/"><span class="glyphicon glyphicon"></span>Get free quote</a></li>
+</ul>
+</nav>
+</div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<div class="row" id="black">
+<div class="col-md-4">
+<h3>Packers & Movers</h3>
+<h4>INTERNATIONAL CO.</h4>
+<p>Safe and Secure Service </p>
+
+</div>
+<div class="col-md-8">
+<h3>QUICK LINKS</h3>
+<ul class="nav navbar-nav" id="footernav">
+<li><a href="/"><span class="glyphicon glyphicon"></span>Home</a></li>
+<li><a href="/about/"><span class="glyphicon glyphicon"></span>About</a></li>
+
+<li><a href="/services/"><span class="glyphicon glyphicon"></span>Services</a></li>
+<li><a href="/safety/"><span class="glyphicon glyphicon"></span>Safety Features</a></li>
+
+<li><a href="/gallary/"><span class="glyphicon glyphicon"></span>Gallary</a></li>
+
+<li><a href="/contact/"><span class="glyphicon glyphicon"></span>Contact</a></li>
+<li style="border:1px solid #FFF; margin-left:20px;">
+<a href="/quote/"><span class="glyphicon glyphicon"></span>Get free quote</a></li>
+</ul>
+</div>
+
+</div>
+<div class="row" id="last">
+<hr>
+<p class="text-center">Copyright@2020 Packers & Movers International Co. All Rights Reserved</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row banner">
+<div class="col-md-12 subbanner">
+<h1>GET FREE QUOTE</h1>
+</div>
+</div>
+<div class="row padding30">
+<div class="col-md-6 col-md-offset-3" style="border:3px double #FF3366; padding:30px;">
+<form action="/insertquote/" method="post">
+{% csrf_token %}
+<label>Name</label>
+
+<input type="text" class="form-control" name="name" pattern="[A-Z a-z]*" required /><br>
+<label>Email</label>
+
+<input type="email" class="form-control" name="email" />
+<br>
+<label>Phone No.</label>
+
+<input type="text" class="form-control" name="phone" required pattern="[6|7|8|9][0-9]{9}" />
+<br>
+<label>Relocation Date</label>
+<input type="date" class="form-control" name="relocationdate" />
+<br>
+<label>From Address</label>
+<textarea class="form-control" name="fromaddress"></textarea>
+<br>
+<label>To Address</label>
+<textarea class="form-control" name="toaddress"></textarea>
+<br>
+<label>Requirements</label>
+<textarea class="form-control" name="requirements"></textarea>
+<br>
+<input type="submit" class="btn btn-primary" name="btnsend" value="Submit" />
+
+</form>
+
+</div>
+
+
+</div>
+{% endblock %}
